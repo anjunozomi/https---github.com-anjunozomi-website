@@ -1,0 +1,174 @@
+/* Master styles */
+
+html,body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/* Nav styles */
+
+.nav-wrapper {
+    justify-content: space-between;
+    padding: 0;
+    background-color: rgb(211,211,211,0.08);
+    text-align: center;
+}
+
+.brand {
+    justify-content: center;
+    color: black;
+    opacity: 0.7;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.nav-wrapper > .center > div {
+    padding-bottom: 15px;
+}
+
+.nav-link-wrapper {
+    height: 15px;
+    font-size: 13px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    display: inline-flex;
+    margin-inline: 19px;
+}
+
+.active-nav-link a {
+    color: black !important;
+    opacity: 0.8;
+}
+
+.nav-link-wrapper a {
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #8a8a8a;
+}
+
+/* Essentials styles */
+
+.essentials-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 240px;
+    margin-right: 240px;
+    background-color: white;
+}
+
+.essentials-item-wrapper {
+    position: relative;
+    margin: 15px;
+}
+
+.essentials-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .title {
+    color: transparent;
+}
+
+.image-blur {
+    transition: 0.5s;
+    filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .title {
+    color: white;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+/* Outfit Inspo styles */
+
+.outfitinspo-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 240px;
+    margin-right: 240px;
+    background-color: white;
+}
+
+.outfitinspo-item-wrapper {
+    position: relative;
+    margin: 15px;
+}
+
+.outfitinspo-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+
+.footer {
+    padding: 100px 0;
+    text-transform: uppercase;
+    background-color: rgb(211,211,211,0.08);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    opacity: 0.5;
+}
